@@ -1,38 +1,42 @@
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-950">
 
-      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-slate-950 to-black" />
+      {/* Background Glow */}
+      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-slate-950 to-black"></div>
 
-      <div className="relative max-w-7xl mx-auto px-6 py-32">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 py-32">
 
-        <span className="inline-block px-4 py-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm">
-          AI • Agentic AI • Automation
-        </span>
+        <p className="text-cyan-400 uppercase tracking-[6px] font-semibold">
+          AI • AGENTIC AI • AUTOMATION
+        </p>
 
-        <h1 className="mt-8 text-5xl md:text-7xl font-black leading-tight">
+        <h1 className="mt-6 text-5xl md:text-7xl font-black leading-tight text-white">
           Building the Future
           <br />
           with <span className="text-cyan-400">Anastrix</span>
         </h1>
 
-        <p className="mt-8 max-w-2xl text-lg text-slate-300 leading-8">
-          We build enterprise AI platforms, AI agents, intelligent
-          automation systems, and modern software that helps businesses
-          scale faster.
+        <p className="mt-8 max-w-2xl text-lg text-gray-300 leading-8">
+          We build Enterprise AI Platforms, AI Agents,
+          Intelligent Automation and Modern Software
+          Solutions for Businesses Worldwide.
         </p>
 
         <div className="mt-10 flex flex-wrap gap-4">
-          <button className="rounded-xl bg-cyan-500 px-7 py-3 font-semibold hover:bg-cyan-400 transition">
+
+          <button className="bg-cyan-500 hover:bg-cyan-400 text-white px-7 py-3 rounded-xl font-semibold transition-all duration-300">
             Start Project
           </button>
 
-          <button className="rounded-xl border border-cyan-500 px-7 py-3 hover:bg-cyan-500 hover:text-black transition">
+          <button className="border border-cyan-500 hover:bg-cyan-500 hover:text-black px-7 py-3 rounded-xl font-semibold transition-all duration-300">
             View Services
           </button>
+
         </div>
 
       </div>
+
     </section>
   );
 }
